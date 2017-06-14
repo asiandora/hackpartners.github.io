@@ -486,7 +486,6 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
   background-blend-mode: screen;
-  margin-top:-100px;
   z-index:-2;
 }
 
@@ -499,24 +498,21 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
   background-blend-mode: screen;
-  margin-top:-350px;
-  padding-bottom:400px;
   z-index:-3;
 }
 
 .service-image-3 .triangle-left{
-  float:left;
+  position: absolute;
+  left: 0px;
+  top: 0px;
   width:50%;
 }
 
 .service-image-3 .triangle-right{
-  float:right;
-  width:50%;
-}
-
-.service-image-3 .inner{
-  position:absolute;
-  padding-top:300px;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 50%;
 }
 
 .service-image-4{
@@ -531,7 +527,6 @@ a:focus {
   border-style:dashed;
   border-width:3px 0 0 0;
   border-color:#1f1f1e;
-  margin-top:-350px;
 }
 
 .client-section {
@@ -589,10 +584,9 @@ a:focus {
 .box-2 {
   background:#eeeeee;
   position: absolute;
-  width: 60%;
   height: 250px;
-  left: 20%;
-  right: 20%;
+  left: 10%;
+  right: 10%;
   margin-top:80px;
   padding-bottom:30px;
   -webkit-box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.47);
@@ -785,7 +779,7 @@ ul.banner-social-buttons {
   }
 }
 footer {
-  padding: 50px 50px 0 50px;
+  padding: 50px 0;
 }
 footer h1{
   font-size:18px;
@@ -834,4 +828,10 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Carousel Overrides */
+.carousel-inner {
+  top: 50%;
+  transform: translateY(-50%);
 }
