@@ -116,7 +116,7 @@ header h1 {
   font-size: 18px;
   font-size: 1.125rem;
   line-height:50px;
-  padding-top:10%;
+  padding-top:120px;
 }
 header p {
   text-transform: uppercase;
@@ -391,6 +391,11 @@ header p {
 }
 .cd-timeline-content h2 {
   color: #36ffd1;
+}
+
+.cd-timeline-content h2 span{
+  border-bottom: 1px solid;
+  padding-bottom:1px;
 }
 
 .cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
