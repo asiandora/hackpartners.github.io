@@ -433,6 +433,12 @@ a:focus {
   font-size: 0;
   border:0;
 }
+
+@media only screen and (max-width: 767px) {
+  .box h2{
+    font-size:16px;
+  }
+}
 .content-section {
   padding-bottom: 50px;
 }
@@ -486,6 +492,7 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
   background-blend-mode: screen;
+  margin-top:-120px;
   z-index:-2;
 }
 
