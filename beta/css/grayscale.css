@@ -96,9 +96,7 @@ a:focus {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
-  outline: none;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
@@ -131,6 +129,12 @@ a:focus {
   }
 }
 
+.navbar-custom .nav-item .dropdown {
+  background-color:transparent;
+}
+.dropdown-item{
+
+}
 
 .intro {
   display: table;
