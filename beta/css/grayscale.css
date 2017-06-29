@@ -566,7 +566,8 @@ a:focus {
 }
 
 .client-container{
-  padding: 0 150px 0 150px;
+  max-width: 1000px;
+  padding:15px 15px 0 15px;
   margin-right: auto;
   margin-left: auto;
 }
