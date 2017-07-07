@@ -212,6 +212,13 @@ header p {
   }
 }
 
+.navbar-custom .nav-item .dropdown {
+  background-color:transparent;
+}
+.dropdown-item{
+
+}
+
 
 #cd-timeline {
   position: relative;
