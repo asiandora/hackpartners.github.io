@@ -36,6 +36,17 @@ h6 {
   font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 5px;
 }
+
+h3{
+  font-size: 21px;
+}
+@media only screen and (max-width: 767px) {
+  h3{
+    font-size:16px;
+    letter-spacing: 2px;
+  }
+}
+
 p {
   margin: 0 0 25px;
   font-size: 18px;
@@ -298,9 +309,46 @@ a:focus {
   }
 }
 
+.hacktrain {
+  height: auto;
+  padding: 125px 0 150px 0;
+  text-align: center;
+  color: white;
+  background: url(../img/earth.jpg) no-repeat center center scroll;
+  position:relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-blend-mode: screen;
+  border-width:3px 0 3px 0;
+  border-style:solid;
+  border-color:#36ffd1;
+}
+
+.hacktrain h3{
+  line-height:38px;
+  letter-spacing:4px;
+}
+
+.hacktrain span{
+  color:#36ffd1;
+}
+
+.hacktrain a:hover{
+  border-bottom: 2px #36ffd1 solid;
+}
+
+@media only screen and (max-width: 767px) {
+  .hacktrain img{
+    max-width:330px;
+    margin:0 30px 0 30px;
+  }
+}
+
 .mission-body {
   height: auto;
-  padding: 100px 0 150px 0;
+  padding: 100px 0 100px 0;
   text-align: center;
   color: white;
   background: #222222 no-repeat bottom center scroll;
@@ -316,8 +364,8 @@ a:focus {
 }
 
 .mission-body img{
-  max-width:180px;
-  padding:20px 0 0 0;
+  max-width:170px;
+  padding-top:25px;
   float:right;
 }
 
@@ -326,6 +374,7 @@ a:focus {
     float:none;
     display:block;
     display:inline-block;
+    margin:-25px auto;
   }
 }
 
@@ -333,7 +382,8 @@ a:focus {
   line-height: 35px;
   float:left;
   padding:20px 0 20px 0;
-  max-width:600px;
+  max-width:550px;
+  letter-spacing:4px;
 }
 
 .mission-body span{
@@ -409,19 +459,20 @@ a:focus {
 .service-section p{
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size:16px;
+  font-size:18px;
+  margin:35px 150px 35px 150px;
 }
 
 .service-image-1{
-  background: url(../img/service-1.png) no-repeat center center scroll;
+  background: #222222 no-repeat bottom center scroll;
   position:relative;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   background-blend-mode: screen;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
-  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 90%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
   z-index:-1;
 }
 
