@@ -25,6 +25,7 @@ h2 {
   font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: 6px;
   color:#36ffd1;
+  font-size: 36px;
 }
 
 h1,
@@ -34,7 +35,7 @@ h5,
 h6 {
   text-transform: uppercase;
   font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
 }
 
 h3{
@@ -56,7 +57,7 @@ p {
   p {
     margin: 0 0 35px;
     font-size: 20px;
-    line-height: 1.6;
+    line-height: 1.5;
   }
 }
 a {
@@ -206,10 +207,10 @@ a:focus {
     padding: 0;
   }
   .intro .intro-body .brand-heading {
-    font-size: 50px;
+    font-size: 46px;
   }
   .intro .intro-body .intro-text {
-    font-size: 20px;
+    font-size: 16px;
   }
   .intro .intro-body img {
   text-align:center;
@@ -335,7 +336,7 @@ a:focus {
   color:#36ffd1;
 }
 
-.hacktrain a:hover{
+.hacktrain-link:hover{
   border-bottom: 2px #36ffd1 solid;
 }
 
@@ -434,11 +435,43 @@ a:focus {
   padding-bottom: 50px;
 }
 
+.portfolio-item {
+    margin: 20px 0 20px 0;
+}
+
+.portfolio-item:hover{
+    z-index: 2;
+    -webkit-transition: all 200ms ease-in;
+    -webkit-transform: scale(1.1);
+    -ms-transition: all 200ms ease-in;
+    -ms-transform: scale(1.1);   
+    -moz-transition: all 200ms ease-in;
+    -moz-transform: scale(1.1);
+    transition: all 200ms ease-in;
+    transform: scale(1.1);
+}
+
+.portfolio-bg {
+  background-color: #141414;
+  box-shadow: -12px 12px 48px #000000;
+}
+
+@media (min-width: 768px) {
+  .portfolio-item-down{
+    margin-top:50px;
+  }
+}
+
+.service-btn{
+  margin-bottom: 50px;
+}
+
+
 .service-section {
   width:100%;
   height:auto;
   color: white;
-  padding: 350px 0 350px 0;
+  padding: 175px 0 200px 0;
 }
 
 .service-section span{
@@ -454,13 +487,18 @@ a:focus {
 }
 
 .service-section h1{
-  line-height:50px;
+  line-height:52px;
+
 }
 .service-section p{
-  text-transform: uppercase;
+
   letter-spacing: 2px;
-  font-size:18px;
-  margin:35px 150px 35px 150px;
+  font-size:13px;
+  padding:20px;
+}
+.service-section h3{
+  color:#FFFFFF;
+  font-size: 28px;
 }
 
 .service-image-1{
@@ -471,10 +509,16 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
   background-blend-mode: screen;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
-  clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
   z-index:-1;
 }
+
+@media (min-width: 768px) {
+  .service-image-1{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+  }
+}
+
 
 .service-image-2{
   background: url(../img/service-2.png) no-repeat center center scroll;
@@ -484,34 +528,9 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
   background-blend-mode: screen;
-  margin-top:-120px;
+  margin-top:-150px;
+  padding-top:250px;
   z-index:-2;
-}
-
-.service-image-3{
-  background: 
-    linear-gradient(#1d1d1b 60%,black) no-repeat center center scroll;
-  position:relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-blend-mode: screen;
-  z-index:-3;
-}
-
-.service-image-3 .triangle-left{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width:50%;
-}
-
-.service-image-3 .triangle-right{
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  width: 50%;
 }
 
 .service-image-4{
