@@ -155,13 +155,13 @@ var formatGoogleCalendar = (function() {
             format[i] = format[i].toString();
 
             if (format[i] === '*summary*') {
-                output = output.concat('<span class="summary">' + '<br>' + summary + '</span>');
+                output = output.concat('<div class="col-md-4">' + '<div class="event-box">' + '<span id="summary">' + '<br>' + summary + '</span>');
             } else if (format[i] === '*date*') {
-                output = output.concat('<span class="date">' + '<br>' + dateFormatted + '</span>');
+                output = output.concat('<span id="date">' + '<br>' + dateFormatted + '</span>');
             } else if (format[i] === '*description*') {
-                output = output.concat('<span class="description">' + '<br>' + description + '</span>');
+                output = output.concat('<span id="description">' + '<br>' + '<a class="btn btn-default" href="' + description + '">' + 'Tickets' + '</span>' + '</div>' +'</div>');
             } else if (format[i] === '*location*') {
-                output = output.concat('<span class="location">' + '<br>' + location + '</span>');
+                output = output.concat('<span id="location">' + '<br>' + location + '</span>');
             } else {
                 if ((format[i + 1] === '*location*' && location !== '') ||
                     (format[i + 1] === '*summary*' && summary !== '') ||
