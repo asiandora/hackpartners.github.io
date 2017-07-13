@@ -128,7 +128,21 @@ header p {
   }
 }
 
+a {
+  color: #38ffd3;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #36ffd1;
+}
 
+.light {
+  font-weight: 400;
+}
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -136,7 +150,6 @@ header p {
   font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: black;
   font-size:12px;
-  font-weight:800;
   letter-spacing: 1px;
 }
 .navbar-custom .navbar-toggle {
@@ -163,9 +176,7 @@ header p {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
-  outline: none;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
@@ -196,6 +207,10 @@ header p {
     background: black;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
+}
+
+.navbar-custom .nav-item .dropdown {
+  background-color:transparent;
 }
 
 
@@ -237,25 +252,25 @@ header p {
   letter-spacing: 3px;
 }
 
-.container {
+.container-team {
   padding-right: 35px;
   padding-left: 35px;
   margin-right: auto;
   margin-left: auto;
 }
 @media (min-width: 768px) {
-  .container {
+  .container-team {
     width: 750px;
   }
 }
 @media (min-width: 992px) {
-  .container {
+  .container-team {
     padding-right: 135px;
     padding-left: 135px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container-team {
     width: 1170px;
   }
 }
