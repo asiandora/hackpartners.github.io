@@ -142,7 +142,21 @@ header p {
   }
 }
 
+a {
+  color: #38ffd3;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #36ffd1;
+}
 
+.light {
+  font-weight: 400;
+}
 .navbar-custom {
   margin-bottom: 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
@@ -150,7 +164,6 @@ header p {
   font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: black;
   font-size:12px;
-  font-weight:800;
   letter-spacing: 1px;
 }
 .navbar-custom .navbar-toggle {
@@ -177,9 +190,7 @@ header p {
   transition: background 0.3s ease-in-out;
 }
 .navbar-custom .nav li a:hover {
-  color: rgba(255, 255, 255, 0.8);
-  outline: none;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
@@ -214,9 +225,6 @@ header p {
 
 .navbar-custom .nav-item .dropdown {
   background-color:transparent;
-}
-.dropdown-item{
-
 }
 
 

@@ -124,6 +124,10 @@ a:focus {
 .navbar-custom .nav li.active a:hover {
   color: white;
 }
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    color:grey;
+}
+
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 20px 0;
@@ -144,15 +148,27 @@ a:focus {
 .navbar-custom .nav-item .dropdown {
   background-color:transparent;
 }
-.dropdown-item{
-
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #212121;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 26px;
+    z-index: 1;
 }
 
+.dropdown-menu>li>a {
+  color: #FFFFFF;
+}
+
+.dropdown-item{
+  text-align:center;
+}
 .intro {
   display: table;
   width: 100%;
   height: 100%;
-  padding: 70px 0;
   text-align: center;
   color: white;
   background: #222222 url("https://lightwater.files.wordpress.com/2013/06/jasonhawkes-6159-2.jpg") no-repeat bottom center scroll;
@@ -177,13 +193,19 @@ a:focus {
   animation-name: toColor;
 }
 
+@media (max-width: 768px) {
+  .intro:before{
+    height: 105%;
+  }
+}
+
 .intro .intro-body {
   display: table-cell;
   vertical-align: middle;
 }
 .intro .intro-body img {
   text-align:center;
-  margin:100px 0 0 0;
+  margin:70px 0 0 0;
 }
 .intro .intro-body hr {
   width:40px;
@@ -221,6 +243,7 @@ a:focus {
   height: 60px;  
   }
 }
+
 .intro .intro-body .btn{
   font-size:30px;
 }
@@ -230,13 +253,13 @@ a:focus {
   height: 50px;
   border: 2px solid white;
   border-radius: 100% !important;
-  font-size: 40px;
   color: white;
   background: transparent;
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
 }
+
 .btn-circle:hover,
 .btn-circle:focus {
   outline: none;
@@ -322,7 +345,7 @@ a:focus {
   background-size: cover;
   -o-background-size: cover;
   background-blend-mode: screen;
-  border-width:3px 0 3px 0;
+  border-width:0 0 3px 0;
   border-style:solid;
   border-color:#36ffd1;
 }
@@ -557,6 +580,7 @@ a:focus {
   background-color: #212121;
   height: auto;
   padding: 20px;
+  margin-top:20px;
   box-shadow: -12px 12px 48px #000000;
 }
 
