@@ -155,13 +155,13 @@ var formatGoogleCalendar = (function() {
             format[i] = format[i].toString();
 
             if (format[i] === '*summary*') {
-                output = output.concat('<span class="summary">' + summary + '</span>');
+                output = output.concat('<div class="col-md-4 wow bounce">' + '<div class="event-box">' + '<span id="summary">' + '<br>' + summary + '</span>');
             } else if (format[i] === '*date*') {
-                output = output.concat('<span class="date">' + dateFormatted + '</span>');
+                output = output.concat('<span id="date">' + '<br>' + dateFormatted + '</span>');
             } else if (format[i] === '*description*') {
-                output = output.concat('<span class="description">' + description + '</span>');
+                output = output.concat('<span id="description">' + '<br>' + '<a class="btn btn-default" href="' + description + '" target="_blank">' + 'Join us!' + '</span>' + '</div>' +'</div>');
             } else if (format[i] === '*location*') {
-                output = output.concat('<span class="location">' + location + '</span>');
+                output = output.concat('<span id="location">' + '<br>' + location + '</span>');
             } else {
                 if ((format[i + 1] === '*location*' && location !== '') ||
                     (format[i + 1] === '*summary*' && summary !== '') ||
@@ -212,7 +212,7 @@ var formatGoogleCalendar = (function() {
     };
 
     var getDayNameFormatted = function (dateFormatted) {
-      return getDayName(getDateFormatted(dateFormatted).getDay()) + ' ';
+      return getDayName(getDateFormatted(dateFormatted).getDay()) + ', ';
     };
 
     var getDateFormatted = function (dateInfo) {
@@ -250,11 +250,11 @@ var formatGoogleCalendar = (function() {
         }
 
         if (config.sameDayTimes && !moreDaysEvent && !isAllDayEvent) {
-            formattedTime = ' from ' + getFormattedTime(dateStart) + ' - ' + getFormattedTime(dateEnd);
+            formattedTime = '<br>' + getFormattedTime(dateStart) + ' - ' + getFormattedTime(dateEnd);
         }
 
         //month day, year time-time
-        return dayNameStart + getMonthName(dateStart[1]) + ' ' + dateStart[0] + ', ' + dateStart[2] + formattedTime;
+        return dateStart[0] + ' ' + getMonthName(dateStart[1]) + ', ' + dateStart[2] + formattedTime;
     };
 
     var formatDateOneDay = function(dateStart, dayNames) {
@@ -276,7 +276,7 @@ var formatGoogleCalendar = (function() {
         dayNameEnd = getDayNameFormatted(dateEnd);
       }
         //month day-day, year
-        return dayNameStart + getMonthName(dateStart[1]) + ' ' + dateStart[0] + '-' + dayNameEnd + dateEnd[0] + ', ' + dateStart[2];
+        return dateStart[0] + ' - ' + dateEnd[0] + ' ' + getMonthName(dateStart[1]) +  ', ' + dateStart[2];
     };
 
     var formatDateDifferentMonth = function(dateStart, dateEnd, dayNames) {
@@ -288,7 +288,7 @@ var formatGoogleCalendar = (function() {
         dayNameEnd = getDayNameFormatted(dateEnd);
       }
         //month day - month day, year
-        return dayNameStart + getMonthName(dateStart[1]) + ' ' + dateStart[0] + '-' + dayNameEnd + getMonthName(dateEnd[1]) + ' ' + dateEnd[0] + ', ' + dateStart[2];
+        return dateStart[0] + ' ' + getMonthName(dateStart[1]) + ' - ' + dateEnd[0] + ' ' + getMonthName(dateEnd[1]) + ', ' + dateStart[2];
     };
 
     var formatDateDifferentYear = function(dateStart, dateEnd, dayNames) {
@@ -300,7 +300,7 @@ var formatGoogleCalendar = (function() {
         dayNameEnd = getDayNameFormatted(dateEnd);
       }
         //month day, year - month day, year
-        return dayNameStart + getMonthName(dateStart[1]) + ' ' + dateStart[0] + ', ' + dateStart[2] + '-' + dayNameEnd + getMonthName(dateEnd[1]) + ' ' + dateEnd[0] + ', ' + dateEnd[2];
+        return dateStart[0] + ' ' + getMonthName(dateStart[1]) + ', ' + dateStart[2] + ' - ' + dateEnd[0] + ' ' + getMonthName(dateEnd[1]) + ', ' + dateEnd[2];
     };
 
     //Check differences between dates and format them
@@ -376,6 +376,8 @@ var formatGoogleCalendar = (function() {
         return formattedTime;
     };
 
+
+
     return {
         init: function (settingsOverride) {
             var settings = {
@@ -392,7 +394,7 @@ var formatGoogleCalendar = (function() {
                 pastSelector: '#events-past',
                 upcomingHeading: '<h2>Upcoming events</h2>',
                 pastHeading: '<h2>Past events</h2>',
-                format: ['*date*', ': ', '*summary*', ' &mdash; ', '*description*', ' in ', '*location*']
+                format: ['*date*', ': ', '*summary*', ' &mdash; ', '*description*', ' in ', '*location*'] 
             };
 
             settings = mergeOptions(settings, settingsOverride);

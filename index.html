@@ -10,23 +10,26 @@
     <meta name="author" content="">
 
     <title>Hack Partners</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="css/form.css" rel="stylesheet" >
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/portfolio.css" rel="stylesheet">
-    <link href="css/scrolling-nav.css" rel="stylesheet">
-    <link href="css/slider.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- for unminified version add this -->
+    <link rel="stylesheet" type="text/css" href="css/fonts/fonts.css" />
+    <!-- for minified version add this -->
+    <link rel="stylesheet" type="text/css" href="css/fonts/fonts.min.css" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,46 +38,83 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Oswald">
+
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
-            <div class="navbar-header page-scroll">
-              <div id="navlogo">
-                <a class="page-scroll" href="#myCarousel">
-                  <img src="img/hp-long-logo.png"/>
-                </a>
-              </div>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
                 </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    <img src="img/hp-square-logo.png" class="img-responsive">
+                </a>
             </div>
 
-            <div class="collapse navbar-collapse navbar-ex1-collapse" style="float:right">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+
                     <li>
-                        <a class="page-scroll" href="#about">About Us</a>
+                        <a class="page-scroll" href="about/ourstory/index.html">Our Story</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#forces">Partners</a>
+                        <a class="page-scroll" href="about/team/index.html">The Team</a>
+                    </li>
+
+                    <!--
+                    <li class="nav-item">
+                      <a class="dropdown-toggle nav-link" data-toggle="dropdown" role="button">About <b class="glyphicon glyphicon-menu-down"></b></a>
+                      <ul class="dropdown-menu dropdown-content">
+                        <li><a class="dropdown-item" href="about/ourstory/index.html">Our Story</a></li>
+                        <li><a class="dropdown-item" href="about/team/index.html">The Team</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="dropdown-toggle nav-link" data-toggle="dropdown" role="button">Clients <b class="glyphicon glyphicon-menu-down"></b></a>
+                      <ul class="dropdown-menu dropdown-content">
+                        <li><a class="dropdown-item" href="#">Consulting</a></li>
+                        <li><a class="dropdown-item" href="#">Hackathon</a></li>
+                        <li><a class="dropdown-item" href="#">Incubation Fund</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item">
+                      <a class="dropdown-toggle nav-link" data-toggle="dropdown" role="button">Innovators <b class="glyphicon glyphicon-menu-down"></b></a>
+                      <ul class="dropdown-menu dropdown-content">
+                        <li><a class="dropdown-item" href="#">Associate Network</a></li>
+                        <li><a class="dropdown-item" href="#">Hackathon</a></li>
+                        <li><a class="dropdown-item" href="#">#RailTech Fund</a></li>
+                      </ul>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="#">Events</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#clients">Clients</a>
+                        <a class="page-scroll" href="#">Media</a>
                     </li>
+                    -->
+                    <li class="nav-item">
+                      <a class="dropdown-toggle nav-link" data-toggle="dropdown" role="button">Industries & Expertise <b class="glyphicon glyphicon-menu-down"></b></a>
+                          <ul class="dropdown-menu dropdown-content">
+                            <li><a class="dropdown-item" href="http://hacktrain.com">Rail</a></li>
+                          </ul>
+                    </li>
+
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                    <li style="color:white">
-                        <a target="_blank" alt="HackTrain Hackathon" href="http://hacktrain.com/">HackTrain</a>
-                    </li>
-                    <li style="color:white">
-                        <a target="_blank" alt="HackTrain Hackathon" href="http://hacktrain.com/hackathon/">HackTrain Hackathons</a>
+                        <a class="page-scroll" href="mailto:hello@hackpartners.com">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -83,972 +123,446 @@
         <!-- /.container -->
     </nav>
 
-    <!-- Half Page Image Background Carousel Header -->
-    <header id="myCarousel" class="carousel slide">
-      <div class="fill">
-
-        <div class="row">
-
-          <div class="col-md-4">
-          </div>
-
-          <div class="col-md-4">
-              <img id="hk-logo" src="img/logo-sq-white.png"/>
-          </div>
-
-          <div class="col-md-4">
-          </div>
-
+    <!-- Intro Header -->
+    <header class="intro wow toColor" data-wow-duration="2s">
+        <div class="intro-body">
+            <div class="container">
+                <img src="img/hp-logo-rectangle.png" class="img-responsive col-lg-12" alt="Responsive image">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2 wow fadeIn" data-wow-duration="3s">
+                        <h1 class="brand-heading">Our Vision<hr></h1>
+                        <p class="intro-text">DRIVE FORWARD INNOVATION IN THE
+                        <br>FUTURE'S MOST CRITICAL INDUSTRIES</p>
+                        <a href="#mission" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="row">
-
-          <div class="col-md-4">
-          </div>
-
-          <div class="col-md-4" style="text-align:center">
-          <div class="col-md-4">
-          </div>
-
-        </div>
-
-      </div>
-    </div>
     </header>
 
-  <section class="arrow">
-    <div align="center">
-      <div class="col-md-12">
-        <div class="row">
-          <div class="col-md-4 col-md-12">
+    <!-- Mission Section -->
+    <section id="mission" class="mission-body">
+        <div class="container text-center">
+            <div class="row">
+                <h2>MISSIONS</h2>
+                <br>
+                <div class="wow fadeInLeft">
+                    <div class="col-sm-4">
+                        <img src="img/mission-1.png" class="img-responsive">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Fundamentally Improve <span>Customer
+                        experience</span> and <span>operational efficiency</span>
+                        in the industries that we operate in</h3>
+                    </div>
+                </div>
 
-          </div>
-          <div class="col-md-4 col-md-12">
-            <a href="#about" class="btn btn-circle page-scroll">
-              <i class="fa fa-angle-double-down animated"></i>
-            </a>
-          </div>
-          <div class="col-md-4 col-md-12">
+                <div class="wow fadeInRight">
+                    <div class="col-sm-4">
+                        <img src="img/mission-2.png" class="img-responsive">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Lead & support the delivery
+                        of the uk's most important <span>technology
+                        infrastructure projects</span></h3>
+                    </div>
+                </div>
 
-          </div>
+                <div class="wow fadeInLeft">
+                    <div class="col-sm-4">
+                        <img src="img/mission-3.png" class="img-responsive">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Become <span>industry leaders</span> through
+                        thought leadership and implementation
+                        of innovation</h3>
+                    </div>
+                </div>
+
+                <div class="wow fadeInRight">
+                    <div class="col-sm-4">
+                        <img src="img/mission-4.png" class="img-responsive">
+                    </div>
+                    <div class="col-sm-8">
+                        <h3>Be the platform that enables the break down of barriers and
+                        accelerates the <span>adoption of new technology</span></h3>
+                    </div>
+                </div>
+            </div>           
         </div>
-      </div>
-    </div>
-  </section>
-    <!-- Header -->
+    </section>
 
 
-    <!-- About -->
-    <section id="about" class="about">
+    <!-- HackTrain Intro Section -->
+    <section id="hacktrain" class="hacktrain">
+        <div class="container text-center">
+            <div class="row">
+                <img src="img/hacktrain-intro.png" class="img-responsive col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4">
+                <div class="col-lg-8 col-lg-offset-2">
+                    
+                    <h3>RAIL IS JUST THE BEGINNNING.</h3>
+                    <h3>
+                    HACK PARTNERS LOOK TO EXPAND
+                    TO OTHER INDUSTRIES SUCH AS HEALTH, ENERGY, AND EDUCATION IN THE FUTURE.
+                    </h3>
+                    <br>
+                    <h3>Before we do this, we intend to fundamentally change the rail industry
+                    forever through our grassroot innovative movement - <a href="http://hacktrain.com" class="hacktrain-link" target="_blank">The HackTrain</a>
+                    </h3>
+                    <br>
+                    <a href="http://hacktrain.com" target="_blank"><img class="wow fadeIn" src="img/hacktrain-logo.png"></a>
+                </div>
+            </div>           
+        </div>
+        <div class="box wow pulse" data-wow-duration="2s">
+            <div class="text-center">
+                <div class="row">
+                    <br>
+                    <h2>Behind the story of Hack Partners</h2>
+                    <hr>
+                    <a href="about/ourstory/index.html" class="btn btn-default btn-sm" style="font-size:11px;">READ MORE</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CLIENTS -->
+    <section id="clients" class="service-section service-image-1 text-center">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center"><br>
-                    <h2>We introduce innovations to the rail industry all the way from conception, to trial and installation.</h2><br><br>
-                    <p class="lead">We are a global leading provider of high impact technology services.<br>With years of experience, we deliver high quality hackathons, accelerators and innovation workshops.</p>
+                <div class="col-lg-8 col-lg-offset-2 col">
+                    <h1 id="clients-width">WHAT WE DO WITH OUR
+                    <span>CLIENTS</span></h1>
+                    <hr>
+                    <p class="text-uppercase">We drive forward the implementation and adoption of new technology in some of the biggest transport operators in the world.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 portfolio-item col">
+                    <div class="portfolio-bg portfolio-item-down">
+                        <img class="img-responsive" src="img/clients-hackathons.png" alt="">
+                        <h3>
+                        Hackathons
+                        </h3>
+                        
+                        <p>Through the identification of both industry wide and internal organisational challenges, our 48-hour technology marathon for innovators sees the creation of dozens of new prototypes that your organisation can learn and be inspired from.
+                        </p>
+                        <a href="#" class="btn btn-default btn-lg service-btn">Get Involved</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 portfolio-item col">
+                    <div class="portfolio-bg">
+                        <img class="img-responsive" src="img/clients-consulting.png" alt="">
+                        <h3>
+                        Consulting
+                        </h3>
+                        
+                        <p>We help your organisation understand and utilise upcoming technology trends that drive growth and increase productivity.
+                        </p>
+                        <a href="#" class="btn btn-default btn-lg service-btn">Innovate with us</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 portfolio-item">
+                    <div class="portfolio-bg portfolio-item-down">
+                        <img class="img-responsive" src="img/clients-fund.png" alt="">
+                        <h3>
+                        Fund
+                        </h3>
+                        
+                        <p>We are setting up a #RailTech Incubation Fund in partnership with the industry to help the very best startups survive the funding gap and grow their business within rail.
+                        </p>
+                        <a href="#" class="btn btn-default btn-lg service-btn">Invest in the best startups</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                    <br>
-                    <a target="_blank" href="#portfolioModalTeam" data-toggle="modal" class="btn btn-default btn-lg">
-                      <span style="font-size:1em; color:white" class="network-name">Meet the team</span>
-                    </a>
-                    <br><br><br>
+    <!-- INNOVATORS -->
+    <section id="innovators" class="service-section service-image-2 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h1 id="innovators-width">WHAT WE DO WITH <span>INNOVATORS</span>
+                    AROUND THE WORLD</h1>
+                    <hr>
+                    <p class="text-uppercase">We are harnessing our talent pool more than ever before helping them create the biggest possible impact in the rail industry.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 portfolio-item">
+                    <div class="portfolio-bg portfolio-item-down">
+                        <img class="img-responsive" src="img/innovators-network.png" alt="">
+                        <h3>
+                        Associate Network
+                        </h3>
+                        <p>We are handpicking the very best and exciting hackers, designers, project and product managers to be part of an exclusive network of freelance consultants working on innovative projects.
+                        </p>
+                        <a href="#" class="btn btn-default btn-lg service-btn">Join our Network</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 portfolio-item">
+                    <div class="portfolio-bg">
+                        <img class="img-responsive" src="img/innovators-hackathons.png" alt="">
+                        <h3>
+                        Hackathons
+                        </h3>
+                        <p>Our world-class hackathons attract hundreds of applications from around the world to attend our 48-hour technology event. Our infamous HackTrain hackathons have taken us to France and Hong Kong whilst coding. 
+                        </p>
+                        <a href="#" class="btn btn-default btn-lg service-btn">Hack the rail with us</a>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 portfolio-item">
+                    <div class="portfolio-bg portfolio-item-down">
+                        <img class="img-responsive" src="img/innovators-fund.png" alt="">
+                        <h3>
+                        Fund
+                        </h3>
+                        <p>We are working on bridging the gap between fast growing innovators and startups with the rail industry by offering a post-hackathon investment fund and a RailTech Investment fund.
+                        </p>
+                        <a href="#" class="btn btn-default btn-lg service-btn">Join #RailTech</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!--
-                    <h2>We're Hiring!</h2>
-                    <br>
-                    <p class="lead">
-                      We're always on the look out for the very best and motivated individuals.<br>If you want to be the bringer of change, then join us.
+    <!-- EVENTS -->
+    <section id="events" class="container service-section service-image-4 text-center">
+        <div class="container">
+            <div class="row">
+                <div class="text-uppercase">
+                    <p id="events-upcoming">
                     </p>
-                    <br>
-                    <div class="row">
-
-                      <div class="col-md-6 col-sm-12">
-                          <div class="service-item">
-                            <a target="_blank" href="http://goo.gl/9pQVs9"><i class="fa fa-pencil-square-o fa-fw fa-5x"></i></a>
-                              <h4>
-                                  <strong>Project Manager</strong>
-                              </h4>
-                              <p>Full-time Employee</p>
-                              <p>London, UK</p>
-                              <ul class="list-inline">
-                                  <li>
-
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-
-                      <div class="col-md-6 col-sm-12">
-                          <div class="service-item">
-                            <a target="_blank" href="https://goo.gl/tSWauk"><i class="fa fa-plane fa-fw fa-5x"></i></a>
-                              <h4>
-                                  <strong>Business Development</strong>
-                              </h4>
-                              <p>Full-time Employee</p>
-                              <p>London, UK</p>
-                              <ul class="list-inline">
-                                  <li>
-
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-
-                    </div>
-    -->
-
+                    <ul id="events-past">
+                    </ul>
                 </div>
+                
+                <!--HOLD button
+                <div class="col-lg-8 col-lg-offset-2 inner">
+                    <a href="#" class="btn btn-default btn-lg wow bounce">WANT MORE?</a>
+                </div>
+                -->
             </div>
-            <!-- /.row -->
         </div>
-        <!-- /.container -->
     </section>
 
-    <!-- modal pop-up -->
-    <section>
+    <!-- Clients Section -->
+    <section id="clients" class="client-section clients-bg text-center">
+        <div>
+            <h1><span>CLIENTS</span></h1>
+        </div>        
+        <div class="client-container">
 
-    <div class="portfolio-modal modal fade" id="portfolioModalContact" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/firstgroup.png" />
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <h2>Contact Form</h2>
-                          <hr class="star-primary">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/arriva.png" />
+            </div>            
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/angeltrains.png" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/trainline.png" />
+            </div>            
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/mtr.png" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/eurostar.png" />
+            </div>            
+        </div>
 
-                          <form id="gform" method="POST" class="pure-form pure-form-stacked"
-                          action="https://script.google.com/macros/s/AKfycbxLlm8oXDkz8qiA7nko81d2UrQuCWqQ0pin7ewFf_v1M-AMnsU/exec">
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/baicommunications.png" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/sncf.png" />
+            </div>            
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/readingbuses.png" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/ey.png" />
+            </div>            
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/o2.png" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/dft.png" />
+            </div>            
+        </div>
 
-                            <fieldset class="pure-group">
-                              <label for="firstname">First Name: </label>
-                              <input id="firstname" name="firstname" required placeholder="John"/>
-                            </fieldset>
-                            <fieldset class="pure-group">
-                              <label for="surname">Surname: </label>
-                              <input id="surname" name="surname" required placeholder="Smith"/>
-                            </fieldset>
-                            <fieldset class="pure-group">
-                              <label for="email">Email:</label>
-                              <input id="email" name="email" type="email" value=""
-                              required placeholder="youremail@companydomain.com"/>
-                            </fieldset>
-                            <fieldset class="pure-group">
-                              <label for="company">Company: </label>
-                              <input id="company" name="company" required placeholder="Rail Limited"/>
-                            </fieldset>
-                            <fieldset class="pure-group">
-                              <label for="jobtitle">Job Title: </label>
-                              <input id="jobtitle" name="jobtitle" required placeholder="Head of Procurement"/>
-                            </fieldset>
-                            <fieldset class="pure-group">
-                              <label for="message">Message: </label>
-                              <textarea id="message" name="message" rows="5"
-                              required placeholder="Dear Hack Partners, I'm reaching out to you because..."></textarea>
-                            </fieldset>
-                            <br>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            <button class="button-success pure-button button-xlarge" id="send"><i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+        <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/microsoft.png" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/bloomberg.png" />
+            </div>            
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/tfl.png" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/nomaddigital.png" />
+            </div>            
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/silverrail.png" />
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-4 col-xs-4">
+                <img class="img-responsive" alt="" src="img/clients/baesystems.png" />
+            </div>            
+        </div>
 
-                          </form>
+        <div class="container">    
+            <div class="box-2 wow pulse" data-wow-duration="2s">
+                <div class="text-center">
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
+                        <!--
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel" data-slide-to="1"></li>
+                            <li data-target="#carousel" data-slide-to="2"></li>
+                        </ol>
+                        -->
 
-                          <div style="display:none;" id="thankyou_message">
-                            <h4>Thanks for getting in touch. We will reply to you shortly.
-                            </h4>
-                              <br>
-                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                          </div>
+                        <div class="carousel-inner">
+                            <div class="item">
+                                <p>"It was interesting to see other companies struggling with the same issues at HackTrain Hackathon 3.0. The participants were very impressive. They work fast no matter where they are, in a train or in an office. The HackTrain Hackathons was overall a good event for our brand communication and being seen as an open-minded company ready to look for solutons outside."</p>
+                                <h1>Gaetan Lambot</h1>
+                                <h2>SNCF</h2>
+                                <br>
+                            </div>
 
-                      </div>
+                            <div class="item active">
+                                <p>"DfT Hacks was a truly awe-inspiring event. With the help of Hack Parnters, we were able to gather innovators from around the world to build solutions to the problems faced in the transport sector. Ordinarily exporing such ideas would have taken many months and hundreds of thousands of pounds of taxpayers money, but with DfT Hacks, we were able to see prototypes after just 48 hours at a fraction of the cost. We’re now taking some of these ideas forward to not only improve our organisation, but also to improve the lives of transport users and deliver better value for the taxpayer."</p>
+                                <h1>Tom Ewing</h1>
+                                <h2>Department for Transport</h2>
+                                <br>
+                            </div>
+
+                        </div>
+
+                        <a class="carousel-control left" href="#carousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <a class="carousel-control right" href="#carousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModalNews" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                      <div class="modal-body">
-                          <h2>HackTrain Newsletter Sign-up Form</h2>
-                          <hr class="star-primary">
-
-                          <form id="gform2" method="POST" class="pure-form pure-form-stacked"
-                          action="https://script.google.com/macros/s/AKfycbzMSYWHR-hFz63ZHXsqK6eS3mgIk7bhrAT87pwWgo6gikogHzg/exec">
-
-                            <fieldset class="pure-group">
-                              <label for="firstname">First Name: </label>
-                              <input id="firstname" name="firstname" required placeholder="John"/>
-                            </fieldset>
-                            <fieldset class="pure-group">
-                              <label for="surname">Surname: </label>
-                              <input id="surname" name="surname" required placeholder="Smith"/>
-                            </fieldset>
-                            <fieldset class="pure-group">
-                              <label for="email">Email:</label>
-                              <input id="email" name="email" type="email" value=""
-                              required placeholder="youremail@companydomain.com"/>
-                            </fieldset>
-                            <fieldset class="pure-group">
-                              <label for="company">Company: </label>
-                              <input id="company" name="company" required placeholder="Rail Limited"/>
-                            </fieldset>
-                            <fieldset class="pure-group">
-                              <label for="jobtitle">Job Title: </label>
-                              <input id="jobtitle" name="jobtitle" required placeholder="Head of Procurement"/>
-                            </fieldset>
-                            <br>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                            <button class="button-success pure-button button-xlarge" id="send"><i class="fa fa-check"></i>&nbsp;Confirm</button>
-
-                          </form>
-
-                          <div style="display:none;" id="thankyou_message2">
-                            <h3>Subscription confirmed.</h3>
-                            <h4>You are now signed up to the HackTrain newsletter.</h4>
-                              <br>
-                              <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                          </div>
-
-                      </div>
-                    </div>
-                </div>
-            </div>
         </div>
-    </div>
-
-    <div class="portfolio-modal modal fade" id="portfolioModalTeam" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div>
-                      <div class="modal-body">
-                          <hr class="star-primary">
-                          <h2 style="text-align:center">The Hack Partners</h2>
-                          <hr class="star-primary">
-
-                          <section id="team" class="team">
-                              <div class="container">
-                                  <div class="row text-center">
-                                      <div class="col-lg-10 col-lg-offset-1"><br><br>
-                                          <div style="text-align:center">
-                                            <p class="lead">
-                                              We are a team of technology and startup professionals dedicated to bringing the very best solutions that improve customer experience and operational efficiency into the rail industry. We're dedicated to making a fundamental change in rail.
-                                            </p>
-                                          </div>
-                                          <div class="row">
-                                              <div class="col-md-12 col-sm-12">
-                                                  <div class="service-item">
-                                                  <img class="team" src="img/team/river.jpg"/>
-                                                      <h4>
-                                                          <strong>River Tamoor Baig</strong>
-                                                      </h4>
-                                                      <p>CEO<br>Founder</p>
-                                                      <ul class="list-inline">
-                                                          <li>
-                                                              <a href="mailto:river@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://twitter.com/RiverTam57"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://www.linkedin.com/in/rivertam"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                      </ul>
-                                                  </div>
-                                              </div>
-                                              <!-- <div class="col-md-6 col-sm-12">
-                                                  <div class="service-item">
-                                                    <img class="team" src="img/team/alejandro.jpg"/>
-                                                      <h4>
-                                                          <strong>Alejandro Saucedo</strong>
-                                                      </h4>
-                                                      <p>CTO<br>Co-founder</p>
-                                                      <ul class="list-inline">
-                                                          <li>
-                                                              <a href="mailto:alejandro@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://twitter.com/AxSaucedo"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://www.linkedin.com/in/axsaucedo"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                      </ul>
-                                                  </div>
-                                              </div> -->
-                                            </div>
-                                            <div class="row">
-
-                                              <div class="col-md-4 col-sm-12">
-                                                  <div class="service-item">
-                                                    <img class="team" src="img/team/sarah.jpg"/>
-                                                      <h4>
-                                                          <strong>Sarah Chok</strong>
-                                                      </h4>
-                                                      <p>Business Analyst</p>
-                                                      <ul class="list-inline">
-                                                          <li>
-                                                              <a href="mailto:sarah@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://twitter.com/dblchklt"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="http://www.linkedin.com/in/sarah-chok/"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                      </ul>
-                                                  </div>
-                                              </div>
-
-
-                                              <div class="col-md-4 col-sm-12">
-                                                  <div class="service-item">
-                                                    <img class="team" src="img/team/phoebe.jpg"/>
-                                                      <h4>
-                                                          <strong>Phoebe Yiin</strong>
-                                                      </h4>
-                                                      <p>Operations & Marketing</p>
-                                                      <ul class="list-inline">
-                                                          <li>
-                                                              <a href="mailto:phoebe@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://twitter.com/PhoebeYiin"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://www.linkedin.com/in/phoebeyiin"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                      </ul>
-                                                  </div>
-                                              </div>
-
-                                              <div class="col-md-4 col-sm-12">
-                                                  <div class="service-item">
-                                                    <img class="team" src="img/team/ryan.jpg"/>
-                                                      <h4>
-                                                          <strong>Ryan Kowo</strong>
-                                                      </h4>
-                                                      <p>Business Development Manager</p>
-                                                      <ul class="list-inline">
-                                                          <li>
-                                                              <a href="mailto:ryan@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://twitter.com/mrkowo"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://www.linkedin.com/in/ryan-kowo-7a847821/"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                      </ul>
-                                                  </div>
-                                              </div>
-                                            </div>
-
-                                            <div class="row">
-
-                                              <div class="col-md-4 col-sm-12">
-                                                  <div class="service-item">
-                                                    <img class="team" src="img/team/will.png"/>
-                                                      <h4>
-                                                          <strong>Will Slegg</strong>
-                                                      </h4>
-                                                      <p>Design Lead</p>
-                                                      <ul class="list-inline">
-                                                          <li>
-                                                              <a href="mailto:info@eatitupdesign.co.uk"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://twitter.com/eatitupdesign"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://www.linkedin.com/in/will-slegg-040168115"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                      </ul>
-                                                  </div>
-                                              </div>
-
-                                              <div class="col-md-4 col-sm-12">
-                                                  <div class="service-item">
-                                                    <img class="team" src="img/team/rickin.jpg"/>
-                                                      <h4>
-                                                          <strong>Rickin Patel</strong>
-                                                      </h4>
-                                                      <p>Lead Consultant</p>
-                                                      <ul class="list-inline">
-                                                          <li>
-                                                              <a href="mailto:rickin@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://twitter.com/rickinpatel"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://www.linkedin.com/in/rickinp/"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                      </ul>
-                                                  </div>
-                                              </div>
-
-                                              <div class="col-md-4 col-sm-12">
-                                                  <div class="service-item">
-                                                    <img class="team" src="img/team/ed.png"/>
-                                                      <h4>
-                                                          <strong>Ed Maclean</strong>
-                                                      </h4>
-                                                      <p>Startup Engagement Lead</p>
-                                                      <ul class="list-inline">
-                                                          <li>
-                                                              <a href="mailto:ed@hackpartners.com"><i class="fa fa-envelope fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://twitter.com/eddabed"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                          <li>
-                                                              <a href="https://www.linkedin.com/in/macleaned"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                                          </li>
-                                                      </ul>
-                                                  </div>
-                                              </div>
-
-                                          </div>
-                                          <br>
-                                          <hr class="star-primary">
-                                          <h2>Advisory Board</h2>
-                                          <hr class="star-primary">
-                                          <br>
-                                          <div class="row">
-
-                                            <div class="col-md-4 col-sm-12">
-                                                <div class="service-item">
-                                                  <img class="team" src="img/advisors/matt.jpg"/>
-                                                    <h4>
-                                                        <strong>Matt Clifford</strong>
-                                                    </h4>
-                                                    <p>Co-Founder & Chief Executive<br>Entrepreneur First</p>
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                          <a href="https://www.joinef.com/"><i class="fa fa-globe fa-fw fa-2x"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://twitter.com/matthewclifford"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://www.linkedin.com/in/mattcliffordef"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4 col-sm-12">
-                                                <div class="service-item">
-                                                  <img class="team" src="img/advisors/adil.png"/>
-                                                    <h4>
-                                                        <strong>Adil Mohammed</strong>
-                                                    </h4>
-                                                    <p>Technology Entrepreneur<br>Launch48 & Fabrily</p>
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                          <a href="http://spotqa.com/"><i class="fa fa-globe fa-fw fa-2x"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://twitter.com/adilmd"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://www.linkedin.com/in/adilmd"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-4 col-sm-12">
-                                                <div class="service-item">
-                                                <img class="team" src="img/advisors/toby.jpg"/>
-                                                    <h4>
-                                                        <strong>Toby Stone</strong>
-                                                    </h4>
-                                                    <p>Government Advisor & Entrepreneur<br>UK and Estonian Cabinet Office</p>
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                          <a href="http://www.newsquare.io/"><i class="fa fa-globe fa-fw fa-2x"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://twitter.com/theonlytoby"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="https://www.linkedin.com/in/tobiasstone"><i class="fa fa-linkedin fa-fw fa-2x"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                          </div>
-
-                                          <br>
-                                          <hr class="star-primary">
-                                          <h2>Open Positions</h2>
-                                          <hr class="star-primary">
-                                          <br>
-                                          <p class="lead">
-                                            We aren't hiring right now but if you think you may be suitable for the team, please send in your CV to hello@hackpartners.com!
-                                          </p>
-                                          <!--
-                                          <div class="row">
-
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="service-item">
-                                                  <a target="_blank" href="http://goo.gl/9pQVs9"><i class="fa fa-pencil-square-o fa-fw fa-5x"></i></a>
-                                                    <h4>
-                                                        <strong>Project Manager</strong>
-                                                    </h4>
-                                                    <p>Full-time Employee</p>
-                                                    <p>London, UK</p>
-                                                    <ul class="list-inline">
-                                                        <li>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6 col-sm-12">
-                                                <div class="service-item">
-                                                  <a target="_blank" href="https://goo.gl/tSWauk"><i class="fa fa-plane fa-fw fa-5x"></i></a>
-                                                    <h4>
-                                                        <strong>Business Development</strong>
-                                                    </h4>
-                                                    <p>Full-time Employee</p>
-                                                    <p>London, UK</p>
-                                                    <ul class="list-inline">
-                                                        <li>
-      
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                          </div>
-
-                                          -->
-
-
-                                          <!-- /.row (nested) -->
-                                      </div>
-                                      <!-- /.col-lg-10 -->
-                                  </div>
-                                  <!-- /.row -->
-                              </div>
-                              <br>
-                              <!-- /.container -->
-                          </section>
-
-
-                      </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </section>
-
-  <!-- <div class="row">
-      <div class="col-md-4 col-sm-12">
-        <img src="img/rb.png"/>
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <img src="img/as.png"/>
-      </div>
-      <div class="col-md-4 col-sm-12">
-        <img src="img/mf.png"/>
-      </div>
-  </div> -->
-
-
-
-
-  <!-- Team -->
-
-
-
-    <!-- Joining forces -->
-    <section>
-        <aside class="clients" id="forces">
-            <div class="text-vertical-center">
-                <h2>We’ve joined forces with the greatest organisations within the rail industry to drive innovation forward.</h2>
-            </div>
-        </aside>
     </section>
 
-    <!-- Partners -->
-    <section id="partners" class="client-list">
-        <div id="client-list" class="container">
-            <div class="row text-center">
-                <div class="col-md-12"><br><br>
-                    <h2 style="color:white">Partners</h2>
-                    <hr class="small" style="padding-bottom:30px">
-
-                    <div class="row">
-                        <div class="col-md-4 col-md-12">
-                            <div class="service-item">
-                            <img class="client-list" src="img/partners/dft.png"/>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-md-12">
-                            <div class="service-item">
-                              <img class="client-list" src="img/partners/hs2.png"/>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-md-12">
-                            <div class="service-item">
-                              <img class="client-list" src="img/partners/dbis.png"/>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4 col-md-12">
-                            <div class="service-item">
-                            <img class="client-list" src="img/partners/bae.png"/>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-md-12">
-                            <div class="service-item">
-                              <img class="client-list" src="img/partners/ey.png"/>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-md-12">
-                            <div class="service-item">
-                              <img class="client-list" src="img/partners/oc.png"/>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-4 col-md-12">
-                            <div class="service-item">
-                            <img class="client-list" src="img/partners/techcityuk.png"/>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-md-12">
-                            <div class="service-item">
-                              <img class="client-list" src="img/partners/smartrail.png"/>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-md-12">
-                            <div class="service-item">
-                              <img class="client-list" src="img/partners/novacroft.png"/>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /.row (nested) -->
-                </div>
-                <!-- /.col-lg-10 -->
+    <!-- Contact Box -->
+    <section id="contact" class="contact-bg">
+        <div class="container text-center">
+            <div class="first">
+                <h1>General Enquiries</h1>
             </div>
-            <!-- /.row -->
-        </div>
-        <!-- /.container -->
+            <div class="second">
+                <a href="mailto:hello@hackpartners.com"><h1>hello@hackpartners.com</h1></a>
+            </div>
     </section>
 
-  <section id="clients" class="client-list" style="padding-bottom:30px">
-      <div id="client-list" class="container">
-          <div class="row text-center">
-              <div class="col-md-12"><br><br>
-                  <h2 style="color:white">Clients</h2>
-                  <hr class="small" style="padding-bottom:30px">
-                  <div class="row">
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                          <img class="client-list" src="img/clients/first.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/clients/stagecoach.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/clients/arriva.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                          <img class="client-list" src="img/clients/go-ahead.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/clients/nx.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/clients/sr.png"/>
-                          </div>
-                      </div>
-                  </div>
 
-                  <div class="row">
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                          <img class="client-list" src="img/clients/trainline.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/clients/atoc.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/clients/eversholt.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                          <img class="client-list" src="img/clients/nomad-digital.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/clients/mtr.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/clients/bloomberg.png"/>
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="row">
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                          <img class="client-list" src="img/clients/angel-trains.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/clients/o2.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/clients/eurostar.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                          <img class="client-list" src="img/clients/sncf.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/clients/microsoft.png"/>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-sm-12">
-                          <div class="service-item">
-                            <img class="client-list" src="img/clients/reading-bus.png"/>
-                          </div>
-                      </div>
-                    </div>
-                  <!-- /.row (nested) -->
-              </div>
-              <!-- /.col-lg-10 -->
-          </div>
-          <!-- /.row -->
-      </div>
-      <!-- /.container -->
-  </section>
-
-  <!-- Map -->
-  <section class="map">
-      <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.75545249982!2d-0.08923526724086733!3d51.52692810079731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca5c5a5c0b9%3A0x2e878c589c963592!2sHack+Partners!5e0!3m2!1sen!2suk!4v1473689776148"></iframe>
-      <br />
-      <small>
-          <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3697.75545249982!2d-0.08923526724086733!3d51.52692810079731!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761ca5c5a5c0b9%3A0x2e878c589c963592!2sHack+Partners!5e0!3m2!1sen!2suk!4v1473689776148"></a>
-      </small>
-      </iframe>
-  </section>
-
-  <section id="contact" class="call-to-action bg-primary">
-      <div class="container">
-          <div class="row text-center">
-              <div class="col-md-12">
-                  <!-- <h2 style="color:white">Get in Touch</h2> -->
-                  <!-- <hr class="small" style="padding-bottom:30px"> -->
-                  <div class="row">
-                      <div class="col-md-4 col-xs-12">
-                          <div>
-                            <a class="page-scroll" href="#myCarousel">
-                              <img height="105px" src="img/logo-sq-white.png"/>
-                            </a>
-                          </div>
-                      </div>
-                      <div class="col-md-4 col-xs-12">
-                          <div>
-                            <h4>Hack Partners</h4>
-                            <p>WeWork Old St.<br>41 Corsham Street<br>London, N1 6DR<br>United Kingdom</p>
-                          </div>
-                      </div>
-                      <div class="col-md-2 col-xs-12">
-                          <div>
-                          </div>
-                      </div>
-                      <!-- <div class="col-md-2 col-xs-12">
-                          <div>
-                            <a id="contactform" href="#portfolioModalContact" data-toggle="modal">
-                              <h4>Contact Us</h4>
-                            </a>
-                            <a id="mailicon" href="#portfolioModalContact" data-toggle="modal">hello@hackpartners.com</a>
-                            <br><br>
-                            <a id="mailicon" href="#portfolioModalNews" data-toggle="modal">Sign-up to our Newsletter</a>
-                          </div>
-                      </div> -->
-                      <div class="col-md-2 col-xs-12">
-                            <div>
-                              <a id="contactform" href="mailto:hello@hackpartners.com" data-toggle="modal">
-                                <h4>Contact Us</h4>
-                              </a>
-                              <a id="mailicon" href="mailto:hello@hackpartners.com" data-toggle="modal">hello@hackpartners.com</a>
-                              <br><br>
-                              <!-- <a id="mailicon" href="#portfolioModalNews" data-toggle="modal">Sign-up to our Newsletter</a> -->
-                            </div>
-                        </div>
-                  </div>
-                  <br><hr class="star-primary"><br>
-                  <div class="row">
-                    <div class="col-md-4 col-sm-12">
-                      <p style="text-align:left" class="text-muted">Copyright © 2017 Hack Partners Limited. All rights reserved. HackTrain is a registered trademark of Hack Partners Limited.</p>
-                    </div>
-                    <div class="col-md-4 col-sm-12">
-                    </div>
-                    <div class="col-md-2 col-sm-12">
-                    </div>
-                    <div style="text-align:left" class="col-md-2 col-sm-12">
-                      <ul class="list-inline">
-                          <li>
-                              <a href="https://www.fb.com/HackPartners/"><i id="socialmedia" class="fa fa-facebook fa-fw fa-2x"></i></a>
-                          </li>
-                          <li>
-                              <a href="https://twitter.com/HackPartners"><i id="socialmedia" class="fa fa-twitter fa-fw fa-2x"></i></a>
-                          </li>
-                          <li>
-                              <a href="https://instagram.com/HackPartners"><i id="socialmedia" class="fa fa-instagram fa-fw fa-2x"></i></a>
-                          </li>
-                      </ul>
-                    </div>
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="#"><img src="img/hp-logo-footer.png"></a>
                 </div>
-              </div>
-              <!-- /.col-lg-10 -->
-          </div>
-          <!-- /.row -->
-      </div>
-      <!-- /.container -->
-  </section>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+                <div class="col-md-4">
+                    <div class="address-link">
+                        <a href="https://goo.gl/maps/NE9EYWrWkyt">
+                        <p>WeWork Old St.<br>
+                        41 Corsham Street<br>
+                        London, N1 6DR<br>
+                        United Kingdom<br>
+                        </p>
+                        </a>
+                    </div>
+                    <p><span>hello@hackpartners.com</span></p>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/portfolio.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/scrolling-nav.js"></script>
+                </div>
 
-    <!-- Custom Theme JavaScript -->
+
+                <div class="col-md-4">
+                    <h1><span>WE'RE HIRING</span></h1>
+                    <p>
+                    <a href="https://angel.co/hack-partners/jobs/255236-operations-associate?utm_campaign=talent&utm_content=promote_jobs_box-listing&utm_medium=al_tweet&utm_source=twitter&utm_term=hack-partners" target="_blank">+ Operations Associate</a><br>
+                    <a href="https://angel.co/hack-partners/jobs/249150-technology-lead-technical-lead?utm_campaign=talent&utm_content=promote_jobs_box-listing&utm_medium=al_tweet&utm_source=twitter&utm_term=hack-partners" target="_blank">+ Technology Lead</a><br>
+                    <a href="https://www.indeed.co.uk/cmp/Hack-Partners/jobs/Conference-Producer-4f332c2233c01c5d?q=Hack+Partners" target="_blank">+ Conference Producer (Contractor)</a><br>
+                    <a href="https://angel.co/hack-partners/jobs/250514-software-engineer-contractor?utm_campaign=talent&utm_content=promote_jobs_box-listing&utm_medium=al_tweet&utm_source=twitter&utm_term=hack-partners" target="_blank">+ Software Engineer (Contractor)</a>
+
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container text-center text-uppercase copyright">
+            <p>Copyright &copy; 2017 Hack Partners Limited. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- FormatGoogleCalendar JS File -->
+    <script src="js/format-google-calendar.js"></script>
+
     <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#],[data-toggle],[data-target],[data-slide])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    //#to-top button appears after scrolling
-    var fixed = false;
-    $(document).scroll(function() {
-        if ($(this).scrollTop() > 250) {
-            if (!fixed) {
-                fixed = true;
-                // $('#to-top').css({position:'fixed', display:'block'});
-                $('#to-top').show("slow", function() {
-                    $('#to-top').css({
-                        position: 'fixed',
-                        display: 'block'
-                    });
-                });
-            }
-        } else {
-            if (fixed) {
-                fixed = false;
-                $('#to-top').hide("slow", function() {
-                    $('#to-top').css({
-                        display: 'none'
-                    });
-                });
-            }
-        }
-    });
-    // Disable Google Maps scrolling
-    // See http://stackoverflow.com/a/25904582/1607849
-    // Disable scroll zooming and bind back the click event
-    var onMapMouseleaveHandler = function(event) {
-        var that = $(this);
-        that.on('click', onMapClickHandler);
-        that.off('mouseleave', onMapMouseleaveHandler);
-        that.find('iframe').css("pointer-events", "none");
-    }
-    var onMapClickHandler = function(event) {
-            var that = $(this);
-            // Disable the click handler until the user leaves the map area
-            that.off('click', onMapClickHandler);
-            // Enable scrolling zoom
-            that.find('iframe').css("pointer-events", "auto");
-            // Handle the mouse leave event
-            that.on('mouseleave', onMapMouseleaveHandler);
-        }
-        // Enable map zooming with mouse scroll when the user clicks the map
-    $('.map').on('click', onMapClickHandler);
+      formatGoogleCalendar.init({
+        calendarUrl: 'https://www.googleapis.com/calendar/v3/calendars/hackpartners.com_d7sd6eq4cqm3ebi7locers24js@group.calendar.google.com/events?key=AIzaSyBo3MJ-fLVTVzLNstcm8PiAqcZBaf-_WD4',
+        past: false,
+        upcoming: true,
+        sameDayTimes: true,
+        pastTopN: 20,
+        upcomingTopN: 3,
+        recurringEvents: true,
+        itemsTagName: 'class="row"',
+        upcomingSelector: '#events-upcoming',
+        pastSelector: '#events-past',
+        upcomingHeading: '<span><h1>Upcoming events</h1></span>',
+        pastHeading: '<span><h1>Past events</h1></span>',
+        format: ['*summary*', '<br>', '*date*', '<br>', '*location*', '*description*']
+      });
     </script>
 
-    <script data-cfasync="false" type="text/javascript" src="js/gform.js"></script>
-    <script data-cfasync="false" type="text/javascript" src="js/gform2.js"></script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/grayscale.min.js"></script>
+
+    <!-- Animated JS -->
+    <script src="js/wow.min.js"></script>
+
+    <!-- Change Hamburger on Click -->
+    <script src="js/hamburger.js"></script>
 
 </body>
 
