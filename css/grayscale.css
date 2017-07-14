@@ -791,7 +791,7 @@ a:focus {
     font-size:11px;
     letter-spacing: 1px;
     line-height:14px;
-    text-transform: lowercase;
+    text-transform: inherit;
   }
 }
 
