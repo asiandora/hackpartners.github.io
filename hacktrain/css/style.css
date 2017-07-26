@@ -34,17 +34,17 @@ h1, h3, h4, h5, h6{
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  letter-spacing: 6px;
+  letter-spacing: 4px;
   color:#36ffd1;
 
 }
 
 h2 {
-  font-size:24px;
+  font-size:20px;
   text-transform: uppercase;
   font-family: "Oswald", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color:#FFFFFF;
   line-height:32px;
 }
@@ -83,7 +83,7 @@ header {
   height: 200px;
   line-height: 200px;
   text-align: center;
-  background: url(../img/ourstory-header.jpg) no-repeat center scroll;
+  background: url(../img/hacktrain-header.jpg) no-repeat center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -139,6 +139,16 @@ a:hover,
 a:focus {
   text-decoration: none;
   color: #36ffd1;
+}
+
+body{
+  background: url('../img/hacktrain-bg.png') top, linear-gradient(rgba(0,0,0,1) 0%, rgba(34,34,34,1) 15%, rgba(87,87,86,1) 100%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-blend-mode: screen;
+  background-size: contain;
 }
 
 .light {
@@ -214,66 +224,160 @@ a:focus {
   background-color:transparent;
 }
 
-
-.team-bg {
+#pagination {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 30px;
+  list-style: none;
+}
+#pagination li {
+  position: relative;
+  margin: 20px 0;
+  border: 1px solid #FFF;
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+}
+#pagination li:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+#pagination a {
+  position: absolute;
+  text-decoration: none;
+  left: 0;
+  top: 0;
+  color: inherit;
   width: 100%;
-  height: auto;
-  padding: 100px 0;
-  background: #222222 no-repeat bottom center scroll;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-blend-mode: screen;
-  background-size: cover;
+  height: 100%;
 }
 
+.active-dot, body.page-1 #pagination li:first-of-type, body.page-2 #pagination li:nth-of-type(2), body.page-3 #pagination li:nth-of-type(3), 
+body.page-4 #pagination li:nth-of-type(4), body.page-5 #pagination li:nth-of-type(5), body.page-6 #pagination li:nth-of-type(6) {
+  -webkit-transform: scale(2);
+          transform: scale(2);
+}
+
+.vertical-center{
+  display: flex;
+  align-items:center;
+}
+
+
+.vision {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+
+.vision .row{
+  background-color: rgba(0,0,0,0.9); 
+  box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.47);
+  padding:50px 0px 50px 0px;
+}
+
+.vision h1{
+  line-height:52px;
+  text-transform: uppercase;
+  font-size: 32px;
+  margin: 0 0 10px 0;
+}
+
+.vision h2{
+  font-size:16px;
+  letter-spacing: 1.5px;
+  line-height:28px;
+}
+
+.vision h3{
+  margin-top:50px;
+  letter-spacing:3px;
+  font-size:16px;
+}
+
+.service{
+  width: 100%;
+  height: auto;
+  padding: 0 0 50px 0;
+}
+
+.service .row{
+  background-color: rgba(0,0,0,0.9); 
+  box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.47);
+  padding:60px 10px 0 10px;
+}
+
+.service .column-m{
+  margin: 10px auto;
+}
+
+.service h1{
+  line-height:52px;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0 0 40px 0;
+}
+
+.service p{
+  font-size:18px;
+  letter-spacing: 2px;
+  line-height:1.5;
+  font-weight:400;
+  padding: 0 20px 10px 20px;
+}
+
+.service img{
+  margin-bottom:50px;
+}
+
+.column-service{
+  width: 100%;
+  height: auto;
+  padding: 0 0 50px 0;
+}
+
+.portfolio-bg{
+  margin: 20px 0 20px 0;
+}
+
+
+.column-service .column-m{
+  margin: 10px auto;
+}
+
+.column-service h1{
+  line-height:52px;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0 0 40px 0;
+}
+
+.column-service p{
+  font-size:18px;
+  letter-spacing: 2px;
+  line-height:1.5;
+  font-weight:400;
+  padding: 0 20px 10px 20px;
+}
+
+.column-service img{
+  margin-bottom:50px;
+}
+
+.column-style{
+  background-color: rgba(0,0,0,0.9); 
+  box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.47);
+  padding: 50px 0 50px 0;
+  margin: 0 20px 0 -20px;
+}
 /* Add some shadows to create a card effect */
 .card {
   background-color: black;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-}
-
-.team-bg p{
-  text-transform:uppercase;
-}
-
-.team-bg h2{
-  padding:22px 0 8px 0;
-}
-
-.team-bg p a{
-  font-size:32px;
-  padding:10px;
-  margin-bottom:10px;
-}
-
-.team-bg a{
-  font-size:16px;
-  letter-spacing: 3px;
-}
-
-.container-team {
-  padding-right: 35px;
-  padding-left: 35px;
-  margin-right: auto;
-  margin-left: auto;
-}
-@media (min-width: 768px) {
-  .container-team {
-    width: 750px;
-  }
-}
-@media (min-width: 992px) {
-  .container-team {
-    padding-right: 135px;
-    padding-left: 135px;
-  }
-}
-@media (min-width: 1200px) {
-  .container-team {
-    width: 1170px;
-  }
 }
 
 .title {
