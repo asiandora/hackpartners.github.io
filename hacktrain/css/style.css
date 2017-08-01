@@ -151,6 +151,7 @@ body{
   background-size: contain;
 }
 
+
 .light {
   font-weight: 400;
 }
@@ -203,6 +204,10 @@ body{
 .navbar-custom .nav li.active a:hover {
   color: white;
 }
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    color:grey;
+}
+
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 20px 0;
@@ -220,47 +225,43 @@ body{
   }
 }
 
-.navbar-custom .nav-item .dropdown {
+.navbar-custom .nav-item .dropdown-content li a:hover {
   background-color:transparent;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #212121;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 26px;
+    z-index: 1;
 }
 
-#pagination {
-  position: fixed;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  right: 30px;
-  list-style: none;
-}
-#pagination li {
-  position: relative;
-  margin: 20px 0;
-  border: 1px solid #FFF;
-  border-radius: 100%;
-  width: 8px;
-  height: 8px;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
-}
-#pagination li:hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
-}
-#pagination a {
-  position: absolute;
-  text-decoration: none;
-  left: 0;
-  top: 0;
-  color: inherit;
-  width: 100%;
-  height: 100%;
+.dropdown-content a:hover{
+  border-bottom: 1px solid #36ffd1;
+  margin: 0 15px 0 15px;
 }
 
-.active-dot, body.page-1 #pagination li:first-of-type, body.page-2 #pagination li:nth-of-type(2), body.page-3 #pagination li:nth-of-type(3), 
-body.page-4 #pagination li:nth-of-type(4), body.page-5 #pagination li:nth-of-type(5), body.page-6 #pagination li:nth-of-type(6) {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+.dropdown-menu>li>a:hover{
+  color:#FFFFFF;
 }
+
+.dropdown-menu>li>a {
+  color: #FFFFFF;
+  line-height: 2.5;
+}
+
+.dropdown-backdrop {
+  position:static;
+}
+
+
+.dropdown-item{
+  text-align:center;
+}
+
 
 .vertical-center{
   display: flex;
@@ -368,11 +369,13 @@ body.page-4 #pagination li:nth-of-type(4), body.page-5 #pagination li:nth-of-typ
   margin-bottom:50px;
 }
 
-.column-style{
+
+.column-bg{
   background-color: rgba(0,0,0,0.9); 
   box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.47);
   padding: 50px 0 50px 0;
-  margin: 0 20px 0 -20px;
+  height: 830px;
+
 }
 /* Add some shadows to create a card effect */
 .card {

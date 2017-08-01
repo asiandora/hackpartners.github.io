@@ -141,6 +141,7 @@ a:focus {
   color: #36ffd1;
 }
 
+
 .light {
   font-weight: 400;
 }
@@ -193,6 +194,10 @@ a:focus {
 .navbar-custom .nav li.active a:hover {
   color: white;
 }
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    color:grey;
+}
+
 @media (min-width: 768px) {
   .navbar-custom {
     padding: 20px 0;
@@ -210,8 +215,41 @@ a:focus {
   }
 }
 
-.navbar-custom .nav-item .dropdown {
+.navbar-custom .nav-item .dropdown-content li a:hover {
   background-color:transparent;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #212121;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 26px;
+    z-index: 1;
+}
+
+.dropdown-content a:hover{
+  border-bottom: 1px solid #36ffd1;
+  margin: 0 15px 0 15px;
+}
+
+.dropdown-menu>li>a:hover{
+  color:#FFFFFF;
+}
+
+.dropdown-menu>li>a {
+  color: #FFFFFF;
+  line-height: 2.5;
+}
+
+.dropdown-backdrop {
+  position:static;
+}
+
+
+.dropdown-item{
+  text-align:center;
 }
 
 
