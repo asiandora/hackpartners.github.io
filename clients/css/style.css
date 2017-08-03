@@ -63,7 +63,7 @@ p {
   }
 }
 a {
-  color: #FFFFFF;
+  color: #36ffd1;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -73,6 +73,7 @@ a:focus {
   text-decoration: none;
   color: #36ffd1;
 }
+
 
 /* -------------------------------- 
 
@@ -142,7 +143,7 @@ a:focus {
 }
 
 body{
-  background: url('../img/hacktrain-bg.png') top, linear-gradient(rgba(0,0,0,1) 0%, rgba(34,34,34,1) 15%, rgba(87,87,86,1) 100%);
+  background: linear-gradient(rgba(0,0,0,1) 0%, rgba(34,34,34,1) 20%, rgba(87,87,86,1) 100%);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -269,41 +270,10 @@ body{
 }
 
 
-.vision {
-  width: 100%;
-  height: auto;
-  padding: 50px 0;
-}
-
-.vision .row{
-  background-color: rgba(0,0,0,0.9); 
-  box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.47);
-  padding:50px 0px 50px 0px;
-}
-
-.vision h1{
-  line-height:52px;
-  text-transform: uppercase;
-  font-size: 32px;
-  margin: 0 0 10px 0;
-}
-
-.vision h2{
-  font-size:16px;
-  letter-spacing: 1.5px;
-  line-height:28px;
-}
-
-.vision h3{
-  margin-top:50px;
-  letter-spacing:3px;
-  font-size:16px;
-}
-
 .service{
   width: 100%;
   height: auto;
-  padding: 0 0 50px 0;
+  padding: 70px 0 0 0;
 }
 
 .service .row{
@@ -321,6 +291,7 @@ body{
   text-transform: uppercase;
   font-size: 36px;
   margin: 0 0 40px 0;
+  padding-left:20px;
 }
 
 .service p{
@@ -331,9 +302,21 @@ body{
   padding: 0 20px 10px 20px;
 }
 
+.service h2{
+  padding-bottom: 50px;
+  letter-spacing: 2px;
+}
+
 .service img{
   margin-bottom:50px;
 }
+
+.service a{
+  margin-bottom:50px;
+  letter-spacing: 3px;
+  font-size:21px;
+}
+
 
 .column-service{
   width: 100%;
@@ -374,7 +357,7 @@ body{
   background-color: rgba(0,0,0,0.9); 
   box-shadow: 0px 0px 26px 3px rgba(0,0,0,0.47);
   padding: 50px 0 50px 0;
-  height: 850px;
+  height: 830px;
 
 }
 /* Add some shadows to create a card effect */
@@ -386,6 +369,110 @@ body{
 .title {
   color:#36ffd1;
 }
+
+.hackathon{
+  width: 100%;
+  height: auto;
+  padding: 70px 0 0 0;
+}
+
+.hackathon .row{
+  padding:40px 10px 0 10px;
+}
+
+.hackathon h1{
+  line-height:56px;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0 0 40px 0;
+  padding-left:20px;
+  color:#FFF;
+}
+
+.hackathon span{
+  color:#36ffd1;
+}
+
+.hackathon p{
+  font-size:18px;
+  letter-spacing: 3px;
+  line-height:1;
+  font-weight:200;
+  padding: 0 20px 0px 20px;
+}
+
+.hackathon h2{
+  padding-bottom: 50px;
+  letter-spacing: 2px;
+}
+
+.fund {
+  padding:10px;
+}
+
+.fund .text-box{
+  background-color: rgba(0,0,0,0.9); 
+}
+
+.fund p{
+  font-size:18px;
+  letter-spacing: 2px;
+  line-height:1.5;
+  font-weight:200;
+  padding: 0 20px 0px 20px;
+}
+
+.fund span{
+  border-bottom: 1px solid #FFF;
+}
+
+section .hackathon-slide {
+  position:absolute;
+  top:220px;
+  left:-300px;
+  -webkit-transform: rotate(-90deg);
+  -webkit-transform-origin: 140px 140px;
+  height: 1000px;
+  width: 440px;
+  padding:15px;
+}
+
+article {
+  position:relative;
+  width: 400px;
+  min-width: 280px;
+  margin: 0px 50px 50px 0px;
+  height: 600px;
+  padding: 10px;
+  background: rgba(0,0,0,0.9);
+  box-shadow: 0px 0px 30px 3px rgba(0,0,0,0.5);
+  -webkit-transform: perspective(1000px) rotateY(35deg); 
+ -webkit-transition: -webkit-transform 200ms ease-in-out;
+  z-index:1;
+}
+
+article:hover {
+ -webkit-transform:  scale(1.1); 
+ -webkit-transition: all 200ms ease-in-out;
+  z-index: 30;
+  margin-top: -10px;
+  background: rgba(0,0,0,0.9);
+}
+
+article h1{
+  font-size:21px;
+  padding:20px;
+  line-height: 30px;
+}
+
+article p{
+  font-size:16px;
+  letter-spacing: 1px;
+  padding:10px;
+  font-weight:200;
+}
+
+
 
 .button {
     border: none;
