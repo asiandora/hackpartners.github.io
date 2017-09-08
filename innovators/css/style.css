@@ -263,6 +263,10 @@ body{
   text-align:center;
 }
 
+.hackathon-btn{
+  background-color:#eeeeee;
+  color:black !important;
+}
 
 .vertical-center{
   display: flex;

@@ -260,6 +260,12 @@ a:focus {
   text-align:center;
 }
 
+.hackathon-btn{
+  background-color:#eeeeee;
+  color:black !important;
+}
+
+
 #cd-timeline {
   position: relative;
   padding: 2em 0;

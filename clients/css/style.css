@@ -269,6 +269,10 @@ body{
   align-items:center;
 }
 
+.hackathon-btn{
+  background-color:#eeeeee;
+  color:black !important;
+}
 
 .service{
   width: 100%;

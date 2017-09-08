@@ -367,6 +367,10 @@ a:focus {
   color: #FFFFFF;
 }
 
+.hackathon-btn{
+  background-color:#eeeeee;
+  color:black !important;
+}
 
 footer {
   padding: 50px 50px 0 50px;
