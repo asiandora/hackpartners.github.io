@@ -217,6 +217,15 @@ a:focus {
   border-bottom: 2px solid #36ffd1;
 }
 
+.intro-body p{
+  font-size:14px;
+  margin:0px;
+}
+
+.intro-body a{
+  margin-top:10px;
+}
+
 @media (max-width: 768px) {
   .intro:before{
     height: 105%;
