@@ -253,8 +253,12 @@ a:focus {
 .dropdown-menu>li>a {
   color: #FFFFFF;
   line-height: 2.5;
-
 }
+
+.dropdown-backdrop {
+  position:static;
+}
+
 
 .dropdown-item{
   text-align:center;

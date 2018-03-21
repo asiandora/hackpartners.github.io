@@ -241,6 +241,18 @@ a:focus {
 .dropdown-menu>li>a {
   color: #FFFFFF;
   line-height: 2.5;
+<<<<<<< Updated upstream
+}
+
+.dropdown-backdrop {
+  position:static;
+}
+
+
+.dropdown-item{
+  text-align:center;
+=======
+>>>>>>> Stashed changes
 }
 
 .dropdown-backdrop {
@@ -251,7 +263,6 @@ a:focus {
 .dropdown-item{
   text-align:center;
 }
-
 
 .team-bg {
   width: 100%;
